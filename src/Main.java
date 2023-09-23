@@ -24,7 +24,7 @@ g
                         contor++;
                 }
 
-            System.out.print(contor);
+            System.out.print(" " + contor);
 
     }
 }
