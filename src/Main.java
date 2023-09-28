@@ -1,33 +1,31 @@
 import java.util.*;
-import java.io.*;
-
-public class conversie_b_10 {
+public class Main {
     public static void main(String[] args) {
-        try (Scanner cin = new Scanner(new File("conversie_b_10.in"));
-             PrintWriter out = new PrintWriter(new File("conversie_b_10.out"))) {
+        Scanner cin = new Scanner(System.in);
 
-            int numar, baza, cnt = 0, rezultat = 0, j = 0;
-            int[] n = new int[10];
+        int numar, baza, cnt = 0, rezultat = 0, j = 0;
 
-            numar = cin.nextInt();
-            baza = cin.nextInt();
+        int[] n = new int[10];
 
-            while (numar != 0) {
-                n[++cnt] = numar % 10;
-                numar /= 10;
-            }
+        numar = cin.nextInt();
+        baza = cin.nextInt();
 
-            int[] rezerva = new int[10];
-
-            for (int i = cnt; i >= 1; i--)
-                rezerva[++j] = n[i];
-
-            for (int i = 1; i <= j; i++)
-                rezultat += rezerva[i] * Math.pow(baza, j - i);
-
-            out.println(rezultat);
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
+        while(numar != 0){
+            n[++cnt] = numar % 10;
+            numar /= 10;
         }
+
+        //Baze de numeratie
+
+        int[] rezerva = new int[10];
+
+        for (int i = cnt; i >= 1; i--)
+            rezerva[++j] = n[i];
+
+        for (int i = 1; i <= j; i++)
+            rezultat += rezerva[i] * Math.pow(baza, j - i);
+
+        System.out.println(rezultat);
+
     }
 }
