@@ -1,31 +1,43 @@
-import java.util.*;
-public class Main {
-    public static void main(String[] args) {
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args){
         Scanner cin = new Scanner(System.in);
 
-        int numar, baza, cnt = 0, rezultat = 0, j = 0;
+        int t = cin.nextInt();
+        long x;
 
-        int[] n = new int[10];
+        long[][] matrice= new long[1001][1001];
 
-        numar = cin.nextInt();
-        baza = cin.nextInt();
+        while(t != 0){
 
-        while(numar != 0){
-            n[++cnt] = numar % 10;
-            numar /= 10;
+            int n = cin.nextInt();
+            int k = cin.nextInt();
+
+            int cnt = 0;
+            int m = 1;
+
+            for (int i = 1; i <= n; i++){
+                x = cin.nextLong();
+                matrice[++cnt][m] = x;
+
+                if (cnt == k) {
+                    cnt = 0;
+                    m++;
+                }
+            }
+            long s = 0;
+            for (int i = 1; i <= k; i++) {
+                long maxim = matrice[i][1];
+                for (int j = 1; j <= m; j++) {
+                    if (matrice[i][j] > maxim)
+                        maxim = matrice[i][j];
+                }
+                s += maxim;
+            }
+            t--;
+
+            System.out.println(s);
         }
-
-        //Baze de numeratie
-
-        int[] rezerva = new int[10];
-
-        for (int i = cnt; i >= 1; i--)
-            rezerva[++j] = n[i];
-
-        for (int i = 1; i <= j; i++)
-            rezultat += rezerva[i] * Math.pow(baza, j - i);
-
-        System.out.println(rezultat);
-
     }
 }
