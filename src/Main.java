@@ -4,40 +4,38 @@ public class Main{
     public static void main(String[] args){
         Scanner cin = new Scanner(System.in);
 
-        int t = cin.nextInt();
-        long x;
+        //Numar descompus în sumă cu număr minim de termeni ai şirului lui Fibonacci
 
-        long[][] matrice= new long[1001][1001];
+        int suma = cin.nextInt();
 
-        while(t != 0){
+        int f1 = 0, f2 = 1, f3 = 0, cnt = 0, s = 0, k = 0;
 
-            int n = cin.nextInt();
-            int k = cin.nextInt();
+        int[] fibo = new int[1000];
+        int[] termeni = new int[1000];
 
-            int cnt = 0;
-            int m = 1;
+        fibo[++cnt] = f1;
+        fibo[++cnt] = f2;
 
-            for (int i = 1; i <= n; i++){
-                x = cin.nextLong();
-                matrice[++cnt][m] = x;
-
-                if (cnt == k) {
-                    cnt = 0;
-                    m++;
-                }
-            }
-            long s = 0;
-            for (int i = 1; i <= k; i++) {
-                long maxim = matrice[i][1];
-                for (int j = 1; j <= m; j++) {
-                    if (matrice[i][j] > maxim)
-                        maxim = matrice[i][j];
-                }
-                s += maxim;
-            }
-            t--;
-
-            System.out.println(s);
+        while(f3 <= suma){
+            f3 = f1 + f2;
+            f1 = f2;
+            f2 = f3;
+            fibo[++cnt] = f3;
         }
+
+        for (int i = cnt - 1; i >= 1; i--){
+            s += fibo[i];
+            termeni[++k] = fibo[i];
+            if(s > suma) {
+                s -= fibo[i];
+                termeni[k] = 0;
+            }
+        }
+
+        for (int i = 1; i <= k; i++) {
+            if (termeni[i] != 0)
+                System.out.print(termeni[i] + " ");
+        }
+
     }
 }
