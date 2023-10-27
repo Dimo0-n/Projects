@@ -36,6 +36,7 @@ class Carte{
     public String getCategorie() {
         return categorie;
     }
+    @Override
     public String toString() {
         return "Cartea " + denumire + " scrisa de " + autor + " in " + anul + " este din categoria " + categorie;
     }

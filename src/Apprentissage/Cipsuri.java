@@ -35,7 +35,7 @@ public class Cipsuri {
     public String getReducere() {
         return reducere;
     }
-
+    @Override
     public String toString(){
         return "Cipsurile " + Denumire + " de " + grame + " cu gust de " + gust + " " +reducere;
     }

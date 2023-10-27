@@ -36,6 +36,7 @@ class Student{
     public String getGrupa() {
         return grupa;
     }
+    @Override
     public String toString() {
         return "Studentul " + nume + " " + prenume + " are varsta de " + varsta + " ani si este din grupa " + grupa;
     }
