@@ -1,18 +1,18 @@
 package Apprentissage;
 public class Cipsuri {
-    private String Denumire;
+    private String denumire;
     private int grame;
     private String gust;
     private String reducere;
 
-    public Cipsuri(String Denumire, int grame, String gust, String reducere){
-        this.Denumire = Denumire;
+    public Cipsuri(String denumire, int grame, String gust, String reducere){
+        this.denumire = denumire;
         this.grame  = grame;
         this.gust = gust;
         this.reducere = reducere;
     }
     public void setDenumire(String denumire) {
-        Denumire = denumire;
+        denumire = denumire;
     }
     public void setGrame(int grame) {
         this.grame = grame;
@@ -24,7 +24,7 @@ public class Cipsuri {
         this.reducere = reducere;
     }
     public String getDenumire() {
-        return Denumire;
+        return denumire;
     }
     public int getGrame() {
         return grame;
@@ -37,6 +37,6 @@ public class Cipsuri {
     }
     @Override
     public String toString(){
-        return "Cipsurile " + Denumire + " de " + grame + " cu gust de " + gust + " " +reducere;
+        return "Cipsurile " + denumire + " de " + grame + " cu gust de " + gust + " " +reducere;
     }
 }

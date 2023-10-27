@@ -12,7 +12,7 @@ class Carte{
         this.anul = anul;
         this.categorie = categorie;
     }
-    public void setNume(String denumire) {
+    public void setDenumire(String denumire) {
         this.denumire = denumire;
     }
     public void setAutor(String autor) {
