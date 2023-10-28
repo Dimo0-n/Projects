@@ -36,7 +36,7 @@ public class Main {
 //                Lays
 //                200
 //                Cascaval
-//                la reducere
+//                Da
                 System.out.println("Ati ales \"Cipsuri\" \n Introduceti denumire(String), grame(int), gust(String), reducere(String)");
                 Cipsuri cipsuri1 = new Cipsuri(cin.next(), cin.nextInt(), cin.next(), cin.next());
                 System.out.println("\n" + cipsuri1.toString());
