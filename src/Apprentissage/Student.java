@@ -38,7 +38,12 @@ class Student{
     }
     @Override
     public String toString() {
-        return "Studentul " + nume + " " + prenume + " are varsta de " + varsta + " ani si este din grupa " + grupa;
+        return "Student{" +
+                "\nNume = " +  nume +
+                "\nPrenume = " + prenume +
+                "\nVarsta = " + varsta +
+                "\nGrupa = " + grupa +
+                "\n}";
     }
 
 }

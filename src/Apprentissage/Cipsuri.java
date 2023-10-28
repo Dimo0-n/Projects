@@ -37,6 +37,11 @@ public class Cipsuri {
     }
     @Override
     public String toString(){
-        return "Cipsurile " + denumire + " de " + grame + " cu gust de " + gust + " " +reducere;
+        return "Cipsurile{" +
+                "\nDenumire = " + denumire +
+                "\nGrame = " + grame +
+                "\nGust = " + gust +
+                "\nReducere = " +reducere +
+                "\n}";
     }
 }

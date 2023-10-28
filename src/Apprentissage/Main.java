@@ -30,7 +30,7 @@ public class Main {
                     student1.setVarsta(cin.nextInt());
                     student1.setGrupa(cin.next());
                 }
-                System.out.println("\n" + student1.toString());
+                System.out.println("\nObiectul final arata asa:\n" + student1.toString());
                 break;
             case 2:
 //                Lays
@@ -50,7 +50,7 @@ public class Main {
                     cipsuri1.setGust(cin.next());
                     cipsuri1.setReducere(cin.next());
                 }
-                System.out.println("\n" + cipsuri1.toString());
+                System.out.println("\nObiectul final arata asa:\n" + cipsuri1.toString());
                 break;
             case 3:
 //                Amintiri din copilarie
@@ -71,7 +71,7 @@ public class Main {
                     carte1.setAnul(cin.nextInt());
                     carte1.setCategorie(cin.next());
                 }
-                System.out.println("\n" + carte1.toString());
+                System.out.println("\nObiectul final arata asa:\n" + carte1.toString());
                 break;
             case 4:
 //                Lexus
@@ -91,7 +91,7 @@ public class Main {
                     masina1.setAn(cin.nextInt());
                     masina1.setPret(cin.nextInt());
                 }
-                System.out.println("\n" + masina1.toString());
+                System.out.println("\nObiectul final arata asa:\n" + masina1.toString());
                 break;
         }
     }

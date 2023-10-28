@@ -38,6 +38,11 @@ public class Masina {
     }
     @Override
     public String toString() {
-        return "As vrea sa cumpar un " + Marca + " de culoare " + Culoare + " din anul " + an + " la aproximativ " + pret + " euro";
+        return "Masina{\n" +
+                "\nMarca = " + Marca +
+                "\nCuloare = " + Culoare +
+                "\nAnul = " + an +
+                "\nPretul = " + pret +
+                "\n}";
     }
 }

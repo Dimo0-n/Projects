@@ -38,7 +38,12 @@ class Carte{
     }
     @Override
     public String toString() {
-        return "Cartea " + denumire + " scrisa de " + autor + " in " + anul + " este din categoria " + categorie;
+        return "Cartea{\n" +
+                "\nDenumire = " + denumire +
+                "\nAutor = " + autor +
+                "\nAnul = " + anul +
+                "\nCategorie = " + categorie +
+                "\n}";
     }
 
 }
