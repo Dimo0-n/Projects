@@ -13,9 +13,13 @@ public class Main {
 
         switch (alegere){
             case 1:
+//                Luchian
+//                Catalin
+//                20
+//                AI-222
                 System.out.println("Ati ales \"Student\" \n Introduceti nume(String), prenume(String), varsta(int), grupa(String)");
                 Student student1 = new Student(cin.next(), cin.next(), cin.nextInt(), cin.next());
-                System.out.println(student1.toString());
+                System.out.println("\n" + student1.toString());
                 System.out.print("Daca vrei sa faci vreo schimbare tasteaza 1, daca nu tasteaza 2\n");
                 schimbare = cin.nextInt();
 
@@ -26,12 +30,16 @@ public class Main {
                     student1.setVarsta(cin.nextInt());
                     student1.setGrupa(cin.next());
                 }
-                System.out.println(student1.toString());
+                System.out.println("\n" + student1.toString());
                 break;
             case 2:
+//                Lays
+//                200
+//                Cascaval
+//                la reducere
                 System.out.println("Ati ales \"Cipsuri\" \n Introduceti denumire(String), grame(int), gust(String), reducere(String)");
                 Cipsuri cipsuri1 = new Cipsuri(cin.next(), cin.nextInt(), cin.next(), cin.next());
-                System.out.println(cipsuri1.toString());
+                System.out.println("\n" + cipsuri1.toString());
                 System.out.print("Daca vrei sa faci vreo schimbare tasteaza 1, daca nu tasteaza 2\n");
                 schimbare = cin.nextInt();
 
@@ -42,13 +50,17 @@ public class Main {
                     cipsuri1.setGust(cin.next());
                     cipsuri1.setReducere(cin.next());
                 }
-                System.out.println(cipsuri1.toString());
+                System.out.println("\n" + cipsuri1.toString());
                 break;
             case 3:
+//                Amintiri din copilarie
+//                Ion Creanga
+//                1892
+//                povesti pentru copii
                 System.out.println("Ati ales \"Carte\" \n Introduceti denumire(String), autor(String), anul(int), categorie(String)");
 
                 Carte carte1 = new Carte(cin.next(), cin.next(), cin.nextInt(), cin.next());
-                System.out.println(carte1.toString());
+                System.out.println("\n" + carte1.toString());
                 System.out.print("Daca vrei sa faci vreo schimbare tasteaza 1, daca nu tasteaza 2\n");
                 schimbare = cin.nextInt();
 
@@ -59,12 +71,16 @@ public class Main {
                     carte1.setAnul(cin.nextInt());
                     carte1.setCategorie(cin.next());
                 }
-                System.out.println(carte1.toString());
+                System.out.println("\n" + carte1.toString());
                 break;
             case 4:
+//                Lexus
+//                alba
+//                2021
+//                18500
                 System.out.println("Ati ales \"Masina\" \n Introduceti marca(String), culoarea(String), anul(int), pretul(int)");
                 Masina masina1 = new Masina(cin.next(), cin.next(), cin.nextInt(), cin.nextInt());
-                System.out.println(masina1.toString());
+                System.out.println("\n" + masina1.toString());
                 System.out.print("Daca vrei sa faci vreo schimbare tasteaza 1, daca nu tasteaza 2\n");
                 schimbare = cin.nextInt();
 
@@ -75,7 +91,7 @@ public class Main {
                     masina1.setAn(cin.nextInt());
                     masina1.setPret(cin.nextInt());
                 }
-                System.out.println(masina1.toString());
+                System.out.println("\n" + masina1.toString());
                 break;
         }
     }
