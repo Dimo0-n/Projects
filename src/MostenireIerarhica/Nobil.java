@@ -3,6 +3,7 @@ package MostenireIerarhica;
 public class Nobil extends Cler{
     private int supusi;
     private int avere;
+    Main nume = new Main();
 
     public Nobil(String nume, String ocupatie, String resedinta, int supusi, int avere) {
         super(nume, ocupatie, resedinta);
@@ -28,7 +29,7 @@ public class Nobil extends Cler{
     @Override
     public String toString() {
         return "Nobil{" +
-                " nume= " + getNume() +
+                "nume= " + getNume() +
                 " ,ocupatie= " + getOcupatie() +
                 " ,resedinta= " + getResedinta() +
                 " ,supusi= " + supusi +
@@ -38,6 +39,6 @@ public class Nobil extends Cler{
 
     @Override
     public void prezentare() {
-        System.out.println("Bucurati-va pentru stapanul vostru nobilul Richard");
+        System.out.print("Bucurati-va pentru stapanul vostru nobilul ");
     }
 }

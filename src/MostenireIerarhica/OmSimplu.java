@@ -19,14 +19,14 @@ public class OmSimplu extends Persoana{
     @Override
     public String toString() {
         return "Om Simplu{" +
-                " nume= " + getNume() +
+                "nume= " + getNume() +
                 " ,ocupatie= " + ocupatie + '\'' +
                 "} ";
     }
 
     @Override
     public void prezentare(){
-        System.out.println("Sunt cel mai fidel supus");
+        System.out.print("Sunt cel mai fidel supus si numele meu este ");
     }
 
     //overload

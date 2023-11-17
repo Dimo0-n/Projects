@@ -18,7 +18,7 @@ public class Cler extends OmSimplu{
     @Override
     public String toString() {
         return "Cler{"+
-                " nume= " + getNume() +
+                "nume= " + getNume() +
                 " ,ocupatie= " + getOcupatie() +
                 " ,resedinta= " + resedinta + '\'' +
                 "} ";
@@ -26,6 +26,6 @@ public class Cler extends OmSimplu{
 
     @Override
     public void prezentare(){
-        System.out.println("Eu sunt preamaritul cleric John");
+        System.out.print("Eu sunt preamaritul cleric ");
     }
 }

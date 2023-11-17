@@ -2,6 +2,7 @@ package MostenireIerarhica;
 public class Rege extends Nobil{
     private int aniDomnire;
     private int soldati;
+    Main nume = new Main();
 
     public Rege(String nume, String ocupatie, String resedinta, int supusi, int avere, int aniDomnire, int soldati) {
         super(nume, ocupatie, resedinta, supusi, avere);
@@ -28,7 +29,7 @@ public class Rege extends Nobil{
     @Override
     public String toString() {
         return "Rege{" +
-                " nume= " + getNume() +
+                "nume= " + getNume() +
                 " ,ocupatie= " + getOcupatie() +
                 " ,resedinta= " + getResedinta() +
                 " ,supusi= " + getSupusi() +
@@ -39,6 +40,6 @@ public class Rege extends Nobil{
     }
 
     public void prezentare() {
-        System.out.println("Inchinati-va Majestatii Sale Regelui Arthur");
+        System.out.print("Inchinati-va Majestatii Sale Regelui ");
     }
 }
