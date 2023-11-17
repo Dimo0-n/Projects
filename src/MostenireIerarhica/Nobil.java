@@ -3,7 +3,6 @@ package MostenireIerarhica;
 public class Nobil extends Cler{
     private int supusi;
     private int avere;
-    Main nume = new Main();
 
     public Nobil(String nume, String ocupatie, String resedinta, int supusi, int avere) {
         super(nume, ocupatie, resedinta);

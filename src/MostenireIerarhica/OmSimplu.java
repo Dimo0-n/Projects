@@ -29,5 +29,4 @@ public class OmSimplu extends Persoana{
         System.out.print("Sunt cel mai fidel supus si numele meu este ");
     }
 
-    //overload
 }

@@ -2,7 +2,6 @@ package MostenireIerarhica;
 public class Rege extends Nobil{
     private int aniDomnire;
     private int soldati;
-    Main nume = new Main();
 
     public Rege(String nume, String ocupatie, String resedinta, int supusi, int avere, int aniDomnire, int soldati) {
         super(nume, ocupatie, resedinta, supusi, avere);
